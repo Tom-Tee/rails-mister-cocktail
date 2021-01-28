@@ -1,7 +1,7 @@
 <div class="d-flex flex-column">
 
 
-  <h5 class="new-btn"> <%= link_to "Home", cocktails_path %> </h5>
+  <h5 class="new-btn justify-content-center m-5"> <%= link_to "Home", cocktails_path %> </h5>
 <div class="text-center">
   <div class="inner">
   <h1 class="m-4 title"> <%= @cocktail.name %> </h1>
@@ -36,15 +36,20 @@
 </div>
 
 
-<div class="review container">
+<div class="container">
   <div class="card m-5 p-5">
-  <h1>What other fans think..</h1>
-  <h4> <% @cocktail.reviews.each do |review| %> </h4>
-  <h4> <%= review.content %> </h4>
-  <h4> <%= review.rating %> </h4>
-  <h4> <% end %> </h4>
+      <h1>What other fans think..</h1>
+      <h4> <% @cocktail.reviews.each do |review| %> </h4>
+    <div class="review text-center p-3">
+      <h4> <%= review.content %> </h4>
+      <h4> <%= review.rating %> </h4>
+      <h4> <% end %> </h4>
+    </div>
+    <div class="btn-review m-4">
 
   <h5 class = "new-btn-dose"> <%= link_to "Add Review", new_cocktail_review_path(@cocktail) %> </h5>
+
+    </div>
 
   </div>
 
