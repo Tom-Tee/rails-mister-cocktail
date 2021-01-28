@@ -1,0 +1,58 @@
+<div class="d-flex flex-column">
+
+
+  <h5 class="new-btn"> <%= link_to "Home", cocktails_path %> </h5>
+<div class="text-center">
+  <div class="inner">
+  <h1 class="m-4 title"> <%= @cocktail.name %> </h1>
+  <h4> <% @cocktail.doses.each do |dose| %> </h4>
+
+  <div class="d-flex justify-content-center">
+    <div>
+    <div class =card-dose>
+      <div>
+
+        <h3 class= "px-3" style="text-decoration: underline;">Dose</h3>
+        <h4 class= "px-3"> <%= dose.description %> </h4>
+
+      </div>
+
+      <div>
+
+        <h3 style="text-decoration: underline;">Ingredient</h3>
+        <h4 class= "px-3"> <%= dose.ingredient.name %> </h4>
+
+      </div>
+    </div>
+
+
+    <h4 class="new-btn-delete"> <%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+    <h4> <% end %> </h4>
+
+
+      </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="review container">
+  <div class="card m-5 p-5">
+  <h1>What other fans think..</h1>
+  <h4> <% @cocktail.reviews.each do |review| %> </h4>
+  <h4> <%= review.content %> </h4>
+  <h4> <%= review.rating %> </h4>
+  <h4> <% end %> </h4>
+
+  <h5 class = "new-btn-dose"> <%= link_to "Add Review", new_cocktail_review_path(@cocktail) %> </h5>
+
+  </div>
+
+</div>
+  <div class="footer">
+    <div class="m-3">
+    <h5 class = "new-btn-dose"> <%= link_to "Add Dose", new_cocktail_dose_path(@cocktail) %> </h5>
+
+
+    </div>
+  </div>

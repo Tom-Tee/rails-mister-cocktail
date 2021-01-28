@@ -1,0 +1,65 @@
+@keyframes wheelHueColor {
+    from, to { color: rgb(236,100,75); }
+    10%      { color: rgb(219,10,91); }
+    20%      { color: rgb(174,168,211); }
+    30%      { color: rgb(89,171,227); }
+    40%      { color: rgb(37,116,169); }
+    50%      { color: rgb(3,201,169); }
+    60%      { color: rgb(22,160,133); }
+    70%      { color: rgb(233,212,96); }
+    80%      { color: rgb(243,156,18); }
+    90%      { color: rgb(236,240,241); }
+}
+
+
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0;
+  margin-top: -20px;
+}
+
+.banner h1 {
+    color: #c58080;
+    animation: wheelHueColor 20s infinite;
+    // text-align: center;
+    // font-size: 200px;
+    // margin-top: 50vh;
+    transform: translateY(-50%);
+  margin: 0;
+  color: #ff3737;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 100px;
+  font-weight: bold;
+}
+
+h1 {
+    color: #c58080;
+    animation: wheelHueColor 20s infinite;
+    // text-align: center;
+    // font-size: 200px;
+    // margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.all-cocktails {
+  color: #black
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner p {
+  text-align: center;
+    animation: typing 2s steps(37), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px transparent;
+  /*font-family: monospace;*/
+  font-size: 20px;
+}

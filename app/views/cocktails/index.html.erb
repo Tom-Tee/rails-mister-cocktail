@@ -1,0 +1,25 @@
+<div class="text-center">
+
+<h3 class = "btn btn-info" id = "new-cocktail"> <%= link_to "Create New Cocktail", new_cocktail_path %> </h3>
+
+
+<div class="container mt-4">
+  <h1 class="mb-4 all-cocktails">All Cocktails (<%= @cocktails.length %>)</h1>
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-md-4">
+      <div class="card mb-4" style="width: 100%;">
+        <div class=bg-image></div>
+        <div class="card-body">
+          <h4 class="card-title"><%= cocktail.name.capitalize %></h4>
+          <p class="card-text">This is a description of the yummy cocktail to make you super thirsty</p>
+          <%= link_to 'View Cocktail', cocktail_path(cocktail), class: 'card-link btn btn-info' %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+</div>
+

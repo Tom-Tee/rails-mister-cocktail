@@ -1,0 +1,58 @@
+.new-btn {
+  margin: 0 auto;
+  text-decoration:none;
+  width:100px;
+  padding: 8px 24px;
+  background-color:black;
+  border-radius:4px;
+  color:white;
+  // background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #ff0052;
+}
+
+// .new-btn:hover {
+//   width:120px;
+//   background-color:black;
+//   border-radius:4px;
+//   color:white;
+//   // border: 1px solid ##861a2e;
+// }
+
+.new-btn a {
+  color:white;
+}
+
+.new-btn-dose {
+  text-decoration:none;
+  width:150px;
+  padding: 8px 24px;
+  background-color:#131211;
+  border-radius:4px;
+  color:white;
+  // background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #ff0052;
+}
+
+.new-btn-dose a {
+  color:white;
+}
+
+.new-btn-delete {
+  margin: 0 auto;
+  text-decoration:none;
+  font-size:16px;
+  width:150px;
+  padding: 8px 24px;
+  background-color:#9a0000;
+  border-radius:4px;
+  color:black;
+  // background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #ff0052;
+}
+
+.new-btn-delete a {
+  color:white;
+}

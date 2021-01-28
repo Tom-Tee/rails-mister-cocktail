@@ -1,0 +1,9 @@
+<h1>Tommy Terrific Doses</h1>
+
+
+<h3> <% @doses.each do |dose| %> </h3>
+<h3> <%= dose.description %> </h3>
+<h3> <% end %> </h3>
+
+<h4> <%= link_to "Back to Cocktail", cocktail_path(@cocktail)  %> </h4>
+
