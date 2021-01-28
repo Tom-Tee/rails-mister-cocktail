@@ -1,10 +1,12 @@
-<div class="d-flex flex-column">
+<div class="container">
+
+<!-- <div class="d-flex flex-column"> -->
 
 
-  <h5 class="new-btn justify-content-center m-5"> <%= link_to "Home", cocktails_path %> </h5>
+  <h5 class="new-btn"> <%= link_to "Home", cocktails_path %> </h5>
 <div class="text-center">
   <div class="inner">
-  <h1 class="m-4 title"> <%= @cocktail.name %> </h1>
+  <h1 class="title m-5"> <%= @cocktail.name %> </h1>
   <h4> <% @cocktail.doses.each do |dose| %> </h4>
 
   <div class="d-flex justify-content-center">
@@ -33,6 +35,8 @@
       </div>
       </div>
     </div>
+</div>
+
 </div>
 
 
